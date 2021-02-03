@@ -1,3 +1,5 @@
+使用腾讯云开发平台实现仓库收货发货库存查询功能
+
 1.功能设计
 1.1基础模块功能
 1.1.1仓库、库区、库位、货品、货主管理、用户、角色、批属性
@@ -51,8 +53,8 @@
 
 2.4出库模块
 2.3.1 出库订单 orders
-{仓库号:00001，出库单号：0000000001，货主编号：00001，客户：00001，承运商：00001，外部单号：xxx，外部行号：xxx，单据类型：xxx，需求发货日期：xxx，实际发货时间：xxx，状态：xxx，货品编号：SKU001，箱号：xxx，订单数：100，未结数：100，分配数：100，拣货数：100，发运数：100，批属性1：xxx，批属性2：xxx~批属性12：xxx}
-{whseid:00001，orderKey：0000000001，storerKey：00001，consigneeKey：00001，carrierCode：00001，externorderKey：xxx，externLineno：xxx，type：xxx，requestedshipDate：xxx，actualshipDate：xxx，status：xxx，sku：SKU001，lpn：xxx，originalqty：100，openqty：100，qtyallocated：100，qtypicked：100，shippedqty：100，lottable01：xxx~lottable12：xxx}
+{仓库号:00001，出库单号：0000000001，货主编号：00001，客户：00001，承运商：00001，外部单号：xxx，外部行号：xxx，单据类型：xxx，需求发货日期：xxx，实际发货时间：xxx，状态：xxx，货品编号：SKU001，箱号：xxx，订单数：100，未结数：100，分配数：100，拣货数：100，发运数：100，批次：xxx，批属性编号：xx，批属性值：[{批属性健：批属性1，批属性值：批次号}]}
+{whseid:00001，orderKey：0000000001，storerKey：00001，consigneeKey：00001，carrierCode：00001，externorderKey：xxx，externLineno：xxx，type：xxx，requestedshipDate：xxx，actualshipDate：xxx，status：xxx，sku：SKU001，lpn：xxx，originalqty：100，openqty：100，qtyallocated：100，qtypicked：100，shippedqty：100，lot：xxx，lottableId:xx,lottables:{lottable01：xxx，lottable02:xxx}}
 2.3.2 拣货单 pickdetail
 {仓库号:00001，拣货序号：xxx，货主编号：00001，货品编号：SKU001，出库单号：0000000001，状态：xxx，批次号：xxx，库位：xxx，箱号：xxx，落放 ID：xx,来源库位：xxx,目标库位：xxx，拣货数：100，箱序号：xxx,波次号：xxx}
 {whseid:00001，pickdetailkey：xxx，storerKey：00001，sku：sku001，orderKey：0000000001，status：xxx，lot：xxx，loc：xxx，lpn：xxx，dropid：xx,fromLoc:x,toloc：xxx，qty：100，caseid：xxx，waveKey：xxx}
